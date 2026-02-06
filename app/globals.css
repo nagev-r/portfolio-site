@@ -91,7 +91,11 @@
 }
 
 .footer-logo {
-  font-size: 1.5rem;
+  height: auto;
+  max-width: 50px;
+  display: inline-block;
+  margin: 0 auto;
+  
 }
 
 /*index.css*/
