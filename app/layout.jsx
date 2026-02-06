@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <footer className="site-footer">
-          <img src="/favicon.ico" alt="Nageline logo" className="footer-logo">
+          <img src="/favicon.ico" alt="Nageline logo" className="footer-logo"/>
           <p className="subtext">
             © 2026 Nageline Vallon-Rodriguez <br /> All rights reserved.
           </p>
