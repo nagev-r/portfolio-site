@@ -1,0 +1,27 @@
+.projectsSection {
+  padding: var(--spacing-lg);
+  max-width: var(--max-width);
+}
+
+.sectionHeader {
+  margin-bottom: var(--spacing-lg);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.sectionDescription {
+  font-size: 1.25rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  font-weight: bold;
+}
+
+.projectsContainer {
+  display: grid;
+  gap: var(--spacing-lg);
+}

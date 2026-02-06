@@ -1,0 +1,39 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 120px;
+
+  background-color: rgba(0,0,0,0.63);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border-left: 2px solid rgb(0,0,0);
+  color: white;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+.navLinks {
+  margin-top: auto;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  letter-spacing: 0.05em;
+  font-family: var(--font-links);
+}
+
+.link:hover {
+  color: #000000;
+}

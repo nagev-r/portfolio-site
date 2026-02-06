@@ -1,0 +1,19 @@
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: var(--spacing-xs);
+}
+
+/* Base styles */
+.social-buttons a {
+  font-size: 2rem;           /* overrides size if needed */
+  color: #000000;            /* default icon color */
+  border-radius: 8px;
+  transition: transform 0.1s, background-color 0.2s, color 0.2s;
+}
+
+/* Hover animation */
+.social-buttons a:hover {
+  transform: translateY(-2px);
+  color: #20202044;
+}

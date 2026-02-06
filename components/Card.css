@@ -1,0 +1,45 @@
+.card {
+  background-color: none;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  color: rgb(0, 0, 0);
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-xl);
+  overflow: hidden; /* recently added */
+  
+}
+
+.media-viewer {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.media-viewer img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  border-radius: 0.5rem;
+}
+
+.card-link {
+  color: rgb(1, 44, 49);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.card-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}

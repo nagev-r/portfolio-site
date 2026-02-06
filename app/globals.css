@@ -1,0 +1,182 @@
+/*replaces app.css and index.css*/
+/*app.css*/
+:root {
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --max-width: 62.5rem; /* 1000px */
+
+  --font-body: "system-ui", Arial, monospace; /* not used yet*/
+  --font-heading: "sans-serif", Arial;
+  --font-links: "sans-serif", Arial;
+
+  --color-text: #000000;
+}
+/* 
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+} */
+.app-shell{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.app-layout {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
+    
+}
+
+
+
+/* Base repeating layer */
+.graphic-layer0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;   /* stretch vertically */
+  width: 100%;
+  background: url("/layer0.png") repeat-y left top;
+  background-size: auto 110vh;
+  z-index: 0;
+  
+  will-change: transform;
+  animation: bgScroll 20s linear infinite, colorShift 20s linear infinite;
+}
+
+@keyframes colorShift {
+  0%   { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(300deg) ; }
+  50% { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(295deg) ; }
+  100%   { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(300deg) ; }
+} 
+
+@keyframes bgScroll {
+  from { background-position-y: 0; }
+  to   { background-position-y: -110vh; }
+}
+
+
+
+.content-area {
+  padding: var(--spacing-lg);
+  padding-top: calc(var(--spacing-xl) * 2);
+  background-color: rgba(75, 121, 248, 0.103);
+  z-index: 2;
+}
+
+.site-footer {
+  margin: auto;
+  padding: var(--spacing-lg);
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #ddd8cf; /*Add a texture */
+  color: var(--color-text);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+}
+
+/*index.css*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  font-weight: 500;
+  color: #4f27e0;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #38383888;
+}
+
+body {
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-image: url('/masterbg2.png');
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 100% auto;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.subtext {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

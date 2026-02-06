@@ -1,0 +1,13 @@
+.blogTitle {
+    font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.blogDesc {
+    font-size: 1.25rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  font-weight: bold;
+}

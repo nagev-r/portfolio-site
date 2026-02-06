@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1, 
+        "name": "Butterfly Detection (INIT Build Team)",
+        "startDate": "2025-02",
+        "endDate": "2025-04",
+        "description": [
+            "Designed and assembled hardware setup for Raspberry Pi 4 integration with Python libraries such as OpenCV.",
+            "Configured connections between Raspberry Pi 4 and cloud storage via Google Drive API for secure online data transfer.",
+            "Assisted with website building with React to showcase the Build Team project."
+        ],
+        "technologies": ["Python", "OpenCV", "Raspberry Pi", "Google Drive API", "React"],
+        "media": [
+            {"type": "image","src": "/btrfly.jpg"}
+        ]
+    },
+
+     {
+        "id": 2, 
+        "name": "Driver Drowsiness Detection System App",
+        "startDate": "2025-01",
+        "endDate": "2025-04",
+        "description": [
+            "Developed a mobile application using React Expo to monitor driver alertness through facial recognition.",
+            "Built front-end and back-end components for ML model integration to allow users to track drowsiness patterns via statistics.",
+            "Designed a login system for user authentication and data access via a mobile app through the NoSQL database service, Firebase."
+            
+        ],
+        "technologies": ["React Expo", "JavaScript", "Firebase", "Python"],
+        "media": [
+            {"type": "image","src": "/ddds_poster.jpg"}
+        ]
+    },
+
+    {
+        "id": 3, 
+        "name": "GeekText (Bookstore  REST API)",
+        "startDate": "2023-08",
+        "endDate": "2023-12",
+        "description": [
+            "Constructed a python based REST API service to support and manage an online bookstore.",
+            "Designed a codebase around applications architectural patterns and built a relational database structure in MySQL to support user, book, and shopping management."
+            
+        ],
+        "technologies": ["Pyhton", "Flask", "MySQL", "Postaman (for testing)"],
+        "media": [
+            {"type": "image","src": "/geektext.jpg"}
+        ]
+    },
+
+    {
+        "id": 4, 
+        "name": "Personal Portfolio Website",
+        "startDate": "2024-12",
+        "endDate": null,
+        "description": [
+            "Developed a personal portfolio website using React to showcase my skills, projects, and experiences."
+        ],
+        "technologies": ["React", "JavaScript", "CSS", "HTML"],
+        "media": [
+            {"type": "image","src": "/placeholder.jpg"}
+        ]
+    }
+
+    
+
+
+]
