@@ -57,14 +57,9 @@
   z-index: 0;
   
   will-change: transform;
-  animation: bgScroll 20s linear infinite, colorShift 20s linear infinite;
+  animation: bgScroll 20s linear infinite;
 }
 
-@keyframes colorShift {
-  0%   { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(300deg) ; }
-  50% { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(295deg) ; }
-  100%   { filter: invert(1) sepia(1) saturate(5000%) hue-rotate(300deg) ; }
-} 
 
 @keyframes bgScroll {
   from { background-position-y: 0; }
