@@ -12,9 +12,7 @@ function Page() {
             Hello...
             <br />
             I'm Nageline Vallon-Rodriguez
-            <span className="glitch" data-text="Nageline">
-              
-            </span>
+            
           </h1>
           <p className={styles.heroSubtitle}>
             Software Developer | Multimedia Artist
