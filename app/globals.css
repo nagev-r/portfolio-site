@@ -63,6 +63,7 @@
 
 
 .content-area {
+  overflow-x: hidden;
   padding: var(--spacing-sm);
   padding-top: calc(var(--spacing-xl) * 2);
   background-color: rgba(75, 121, 248, 0.103);
