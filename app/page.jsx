@@ -30,7 +30,7 @@ function Page() {
             Call me Naj. <br /> <br /> I'm a curious CS grad that likes to try my hand at different things
             when it comes to computers. Whether it is tinkering with low level stuff, learning a new language,
             or utilizing some cool resources I've found, I enjoy connecting the dots and exploring new info. 
-            <br /> <br /> I have a deep love and appreciation for that arts and humanities especially as it pertains
+            <br /> <br /> I have a deep love and appreciation for the arts and humanities especially as it pertains
             to the role computers have in our lives and the ethical discourse surrounding modern day implementations.
             <br /> I also like to chat about it!
           </p>
