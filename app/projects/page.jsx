@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Card from "@/components/Card.jsx";
 import {listProjects} from "@/lib/github";
 
+export const revalidate = 600;
 
 export default async function Projects() {
   const projects = (await listProjects());
